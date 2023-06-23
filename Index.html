@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/Style.css">
+  <title>Credita BSB</title>
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="logo">
+      <a href="Index.html">
+        <img src="imagenss/Logo.png" alt="Logo">
+      </a>
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="Index.html">Início</a></li>
+        <li><a href="serviço.html">Serviço</a></li>
+        <li><a href="equipe.html">Equipe</a></li>
+        <li><a href="Contatoo.html">Contato</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="slide-container">
+    <div class="slide active">
+      <img src="imagenss/Slide1.png" alt="Imagem 1" width="100%" height="100%">
+    </div>
+    <div class="slide">
+      <img src="imagenss/Slide2.png" alt="Imagem 2">
+    </div>
+    <div class="slide">
+      <img src="imagenss/Slide3.png" alt="Imagem 3">
+    </div>
+  </div>
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+
+    function showSlide(slideIndex) {
+      slides.forEach((slide) => {
+        slide.classList.remove('active');
+      });
+
+      slides[slideIndex].classList.add('active');
+    }
+
+    function nextSlide() {
+      currentSlide++;
+      if (currentSlide === slides.length) {
+        currentSlide = 0;
+      }
+      showSlide(currentSlide);
+    }
+
+    setInterval(nextSlide, 3000); // Altere o tempo de troca de slide aqui (em milissegundos)
+  </script>
+  <div class="container">
+    <div class="quadrado">
+      <img src="imagenss/quadro1.png" alt="Imagem 1">
+    </div>
+    <div class="quadrado">
+      <img src="imagenss/quadro2.png" alt="Imagem 2">
+    </div>
+    <div class="quadrado">
+      <img src="imagenss/quadro3.png" alt="Imagem 3">
+    </div>
+    <div class="quadrado">
+      <img src="imagenss/quadro4.1.png" alt="Imagem 4">
+    </div>
+  </div>
+  <div class="container">
+    <div class="image">
+      <img src="imagenss/FUNDO1.3 (1).jpg" alt="Imagem">
+    </div>
+    <div class="text">
+      <h3>Aproveite Já!</h3>
+      <p>Está com problemas de dívidas? Ou quer viajar com a família? Credita BSB, está aqui para te ajudar! Trabalhamos
+        com várias oportunidades disponível para você, como: portabilidade, refinanciamento, contrato novo, cartão
+        consigando e muitas outas opções. Atedendemos INSS, pensionistas, servidores públicos e pessoas com carteira
+        assinada. Aproveite essa oportunidade!</p>
+    </div>
+  </div>
+  <br>
+  <header style="background-image: url(imagenss/fundo4.jpg);">
+    <div class="container">
+      <section class="banner">
+        <div class="banner-text">
+          <a href=https://wa.me/556193440004 class="bnt">Realize sua simulação</a>
+        </div>
+    </div>
+    </section>
+  </header>
+  <br>
+  <div class="container">
+    <div class="text">
+      <h3>Aprovado o cartão benefício</h3>
+      <p>Nessa semana foi aprovado o cartão benefício para servidores públicos! Isso mesmo, agora vcs tem a oportunidade
+        de aproveitar esse novidade. O cartão benefício, além de está liberando crédito para você, também tem benefícios
+        adicionais, como: seguro de vida, desconto em farmácias, auxílio funerária e muitos outros!</p>
+    </div>
+    <img class="image" src="imagenss/FUNDO 4.1 (1).jpg" alt="Imagem">
+  </div>
+  <footer>
+    <div>
+      <h2>Contato</h2>
+      <p>Entre em contato conosco para obter mais informações:</p>
+      <ul>
+        <li>Endereço: Edicícil Eldourado/Conic</li>
+        <li>Telefone: (61) 93440004</li>
+        <li>Email: creditabsb@gmail.com</li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>

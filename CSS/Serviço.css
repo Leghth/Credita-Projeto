@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(203, 71%, 93%);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 60px;
+  padding: 0 20px;
+}
+
+.menu ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end;
+  /* Alinhar à direita */
+}
+
+.menu li {
+  margin-left: 10px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.menu li a:hover {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+.logo img {
+  margin-top: 10%;
+  margin-right: 10px;
+  margin-bottom: 5%;
+}
+
+.parallax-container {
+  position: relative;
+  height: 90vh;
+  /* Ajuste a altura conforme necessário */
+  overflow: hidden;
+}
+
+.parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.image-title {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  /* Cor do título */
+  font-size: 80px;
+  /* Tamanho do título */
+  text-align: center;
+  z-index: 2;
+}
+
+.color-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #5c61ec80;
+  /* Substitua pelo valor da cor desejada */
+  z-index: 1;
+}
+
+/* faca mais */
+.faca-mais .container {
+  display: flex;
+  align-items: center;
+  margin: 12px 0 25px 0;
+}
+
+.faca-mais .faca-mais-text {
+  width: 65%;
+  padding: 0 40px;
+  margin: 12px 0 25px 0;
+  margin-left: 30;
+}
+
+.letra {
+  margin-left: 50%;
+}
+
+.faca-mais .faca-mais-text h3 {
+  font-size: 45px;
+  margin-left: 10rem;
+}
+
+.faca-mais .faca-mais-text p {
+  margin: 12px 0 25px 0;
+  
+  font-size: 18px;
+  text-align: center;
+  margin-right: 10rem;
+  margin-left: 10rem;
+}
+
+.faca-mais .faca-mais-img {
+  width: 35%;
+  margin: 12px 0 25px 0;
+  margin-right: 10rem;
+
+}
+
+.faca-mais .faca-mais-img img {
+  width: 100%;
+  margin: 1px 0 25px 0;
+}
+
+.custom-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0319bf;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  align-items: center;
+  text-decoration: none;
+
+}
+
+.custom-button:hover {
+  background-color: #2a2a89;
+  cursor: pointer;
+  align-items: center;
+
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+footer {
+  background-color: #85b5ec;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
